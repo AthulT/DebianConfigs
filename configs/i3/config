@@ -122,7 +122,7 @@ set $ws2 " Firefox"
 set $ws3 " Our Space"
 set $ws4 "  Video Editing"
 set $ws5 "Tor Browser"
-set $ws6 "Files"
+set $ws6 "File Browser"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
@@ -160,7 +160,7 @@ assign [class="firefox-esr"] $ws2
 assign [class="Chromium"] $ws3
 assign [class="kdenlive"] $ws4
 assign [class="Tor Browser"] $ws5
-assign [class="nemo"] $ws6
+assign [class="Nemo"] $ws6
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
