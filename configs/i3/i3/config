@@ -53,7 +53,7 @@ tiling_drag modifier titlebar
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec cool-retro-term
-# bindsym $mod+Return exec foot
+#bindsym $mod+Return exec foot
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -118,11 +118,11 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 ">_ Terminal"
-set $ws2 "  തീക്കുറുക്കൻ "
-# set $ws3 "  നമ്മളിടം "
-set $ws4 "  സിനിമ പിടിത്തം  "
-# set $ws5 "Tor Browser"
+set $ws1 " >_ Terminal "
+set $ws2 "   തീക്കുറുക്കൻ "
+# set $ws3 "   നമ്മളിടം "
+set $ws4 "   സിനിമ പിടിത്തം  "
+# set $ws5 " Tor Browser"
 set $ws6 " ഫയലുകൾ  "
 set $ws7 "7"
 set $ws8 " പണി  "
@@ -160,7 +160,7 @@ assign [class="cool-retro-term"] $ws1
 assign [class="firefox-esr"] $ws2
 assign [class="Chromium"] $ws3
 assign [class="kdenlive"] $ws4
-assign [class="Tor Browser"] $ws5
+# assign [class="Tor Browser"] $ws5
 assign [class="Nemo"] $ws6
 assign [class="Code"] $ws8
 # reload the configuration file
