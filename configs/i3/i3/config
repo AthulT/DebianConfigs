@@ -58,7 +58,8 @@ bindsym $mod+Return exec cool-retro-term
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec rofi -show drun
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -122,7 +123,7 @@ set $ws2 " Firefox"
 set $ws3 " Our Space"
 set $ws4 "  Video Editing"
 set $ws5 "Tor Browser"
-set $ws6 "6"
+set $ws6 "File Browser"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
@@ -160,6 +161,7 @@ assign [class="firefox-esr"] $ws2
 assign [class="Chromium"] $ws3
 assign [class="kdenlive"] $ws4
 assign [class="Tor Browser"] $ws5
+assign [class="Nemo"] $ws6
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -229,7 +231,7 @@ exec xinput set-prop "Elan Touchpad" "libinput Natural Scrolling Enabled" 1
 #Manual Keybindings
 bindsym $mod+Shift+m exec chromium https://meet.google.com/ymi-dpag-eqk
 bindsym $mod+Shift+f exec firefox-esr
-bindsym $mod+Shift+d exec nautilus
+bindsym $mod+Shift+d exec nemo
 bindsym $mod+Shift+t exec torbrowser-launcher
 #bindsym ctrl+alt+t exec cool-retro-term
 
