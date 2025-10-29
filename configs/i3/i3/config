@@ -53,7 +53,7 @@ tiling_drag modifier titlebar
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec cool-retro-term
-
+# bindsym $mod+Return exec foot
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -119,13 +119,13 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 ">_ Terminal"
-set $ws2 " Firefox"
-set $ws3 " Our Space"
-set $ws4 "  Video Editing"
-set $ws5 "Tor Browser"
-set $ws6 "File Browser"
+set $ws2 "  തീക്കുറുക്കൻ "
+# set $ws3 "  നമ്മളിടം "
+set $ws4 "  സിനിമ പിടിത്തം  "
+# set $ws5 "Tor Browser"
+set $ws6 " ഫയലുകൾ  "
 set $ws7 "7"
-set $ws8 "8"
+set $ws8 " പണി  "
 set $ws9 "9"
 set $ws10 "10"
 
@@ -162,6 +162,7 @@ assign [class="Chromium"] $ws3
 assign [class="kdenlive"] $ws4
 assign [class="Tor Browser"] $ws5
 assign [class="Nemo"] $ws6
+assign [class="Code"] $ws8
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -229,10 +230,10 @@ exec xinput set-prop "Elan Touchpad" "libinput Tapping Enabled" 1
 exec xinput set-prop "Elan Touchpad" "libinput Tapping Drag Lock Enabled" 1
 exec xinput set-prop "Elan Touchpad" "libinput Natural Scrolling Enabled" 1
 #Manual Keybindings
-bindsym $mod+Shift+m exec chromium https://meet.google.com/ymi-dpag-eqk
+# bindsym $mod+Shift+m exec chromium https://meet.google.com/ymi-dpag-eqk
 bindsym $mod+Shift+f exec firefox-esr
 bindsym $mod+Shift+d exec nemo
-bindsym $mod+Shift+t exec torbrowser-launcher
+# bindsym $mod+Shift+t exec torbrowser-launcher
 #bindsym ctrl+alt+t exec cool-retro-term
 
 #Wallpaper
